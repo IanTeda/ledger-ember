@@ -1,0 +1,27 @@
+<BsNavbar @type="dark" @backgroundColor="dark" as |navbar|>
+  <div class="navbar-header">
+    {{navbar.toggle}}
+    {{#link-to "index" class="navbar-brand"}}Ledger{{/link-to}}
+  </div>
+  <navbar.content>
+    <navbar.nav as |nav|>
+      <nav.item>
+        <nav.linkTo @route="ledgers">Ledgers</nav.linkTo>
+      </nav.item>
+      <nav.item>
+        <nav.linkTo @route="categories">Categories</nav.linkTo>
+      </nav.item>
+      <nav.item>
+        <nav.linkTo @route="payees">Payees</nav.linkTo>
+      </nav.item>
+      <nav.item>
+        <nav.linkTo @route="budgets">Budgets</nav.linkTo>
+      </nav.item>
+      <nav.item>
+        <nav.linkTo @route="reports">Reports</nav.linkTo>
+      </nav.item>
+    </navbar.nav>
+  </navbar.content>
+</BsNavbar>
+
+{{yield}}

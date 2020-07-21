@@ -7,4 +7,14 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('category');
+  this.route('budget');
+  this.route('payee');
+  this.route('ledger');
+  this.route('categories');
+  this.route('budgets');
+  this.route('payees');
+  this.route('ledgers');
+  this.route('reports');
+  this.route('inventories');
 });
